@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,11 +48,6 @@ th {
     align-content: center;
 }
 
-th, 
-td {
-    padding: 8px;
-}
-
 p { font-size: 1.2rem;}
 
 .dynamic-text-color {
@@ -64,6 +63,25 @@ img{
     inline-size: 100px;
   }
 
-table, th, td{
-    border: 2px solid;
+table {
+    table-layout: auto;
+    width: 100%;  
+  }
+
+
+form#contact{
+    max-width: 400px;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+#contact label{
+    display: block;
+    font-weight: 600;
+}
+
+#contact input, #contact textarea, #contact button{
+    width: 100%;
 }

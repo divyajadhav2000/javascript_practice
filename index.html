@@ -13,7 +13,6 @@
             <img id="profile_img" src="assets/images/monalisa.jpeg" alt="Image">    
             <h1>Hi, here im Monalisa</h1>
             <p>I am <span id="dynamic-text" class="dynamic-text-color">Mentor</span></p>
-            <a href="./info/about.html">About</a>
 
             <p class="social_links">
                 <a href="https://www.linkedin.com/in/divya-jadhav-26122000dec/" target="_blank">
@@ -53,37 +52,40 @@
             <h2>Experience</h2>
             <table>
                 <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Experience</th>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Experience</th>
                 </tr>
                 <tr>
-                <td>Redxcel</td>
-                <td>1234567891</td>
-                <td>1 year</td>
+                    <td>Redxcel</td>
+                    <td>1234567891</td>
+                    <td>1 year</td>
                 </tr>
                 <tr>
-                <td>Lunooom</td>
-                <td>674567891</td>
-                <td>1 year</td>
-            </tr>
-        </table>
+                    <td>Lunooom</td>
+                    <td>674567891</td>
+                    <td>1 year</td>
+                </tr>
+            </table>
+        </div>
     </div>
-    
-</div>
-
-<p>this is first paragraph</p>
-    <p>second para <span class="blue">this is inside second paragraph</span></p>
-    <p>this is third paragraph</p>
-
-
-    <button id="clickme">click me</button>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
-    <script src = "main.js"></script>
-
-    
-<script src="main.js"></script>
-    
+    <div id="contact-me">
+        <form name="contact" id="contact" data-netlify="true">
+            <h1>Contact me</h1>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required/>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required/>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
