@@ -12,11 +12,21 @@ body{
 }
 
 header {
-    margin: 16px;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 1px solid black;
+
 }
 
 header nav > a {
-    margin: 16px;
+    margin: 40px;
+    text-decoration: none;
+}
+
+header nav > a:hover {
+    text-decoration: underline;
 }
 
 footer{
@@ -45,6 +55,7 @@ footer{
     height: 300px;
     width: 300px;
     border-radius: 16px;
+    border-radius: 50%;
 }
 
 .social_links img{
@@ -61,10 +72,16 @@ table,
 tr,
 td ,
 th {
-    border: 1px solid;
+    border: 2px solid;
     border-collapse: collapse;
-    align-content: center;
+    text-align: center;
 }
+
+table {
+    height: 200px;
+    width: 800px;  
+  }
+
 
 p { font-size: 1.2rem;}
 
@@ -79,11 +96,7 @@ p { font-size: 1.2rem;}
 
 img{
     inline-size: 100px;
-  }
-
-table {
-    table-layout: auto;
-    width: 100%;  
+    border-radius: 50%;
   }
 
 
