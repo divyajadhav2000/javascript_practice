@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav>
+            <a href="#about_me">About me</a>
+            <a href="#qualification">Qualification</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact-me">Contact me</a>
+        </nav>
+    </header>
 
-        <div class="intro">
+    <main class="container">
+
+        <article class="intro">
             <img id="profile_img" src="assets/images/monalisa.jpeg" alt="Image">    
             <h1>Hi, here im Monalisa</h1>
-            <p>I am <span id="dynamic-text" class="dynamic-text-color">Mentor</span></p>
+            <p>I am <span id="dynamic-text" class="dynamic-text-color">Software Engineer</span></p>
 
             <p class="social_links">
                 <a href="https://www.linkedin.com/in/divya-jadhav-26122000dec/" target="_blank">
@@ -22,33 +32,42 @@
                     <img src="assets/images/insta.jpeg" height="30px" width="30px">
                 </a>
             </p>
-        </div>
+        </article>
 
-        <div id="about_me">
+        <section id="about_me">
             <h2>About me</h2>
             <p>a software Backend engineer by profession with 1 year of industrial experience</p>
             <p>In 2021 I have completed my graduation</p>
-            <p>I'm driven by the belief that we can always find a better way to do things.</p>
-        </div>
+            <p>
+                I'm driven by the belief that we can always find a better way to do things.
+                Change is hard at first. Messy in the middle.
+                Gorgeous at the end."Change is tough. Our brains crave routine, so stepping outside our comfort zone feels...uncomfortable. 
+                That's why resolutions often fizzle out. But the key to lasting change lies in embracing the messy middle. ‍ 
+                This is where progress feels slow, and setbacks happen. It's where most give up. But here's the thing: the messy middle is normal.
+                It's where you build new habits, break old ones, and face challenges. It's not easy, but push through, and the end result? Gorgeous.
+                The skills you gain, the person you become - that's the reward. So next time you're in the messy middle, 
+                remember: it's part of the journey. Embrace the discomfort, stay focused, and know the beautiful end awaits.
+            </p>
+        </section>
 
-        <div id="qualification">
+        <section id="qualification">
             <h2>Qualification</h2>
             <ol>
                 <li>Bcs</li>
                 <li>Mcs</li>
             </ol>
-        </div>
+        </section>
 
-        <div id="hobbies">
+        <section id="hobbies">
             <h2>Hobbies</h2>
             <ul>
                 <li>Dancing</li>
                 <li>REading</li>
                 <li>Listening music</li>
             </ul>
-        </div>
+        </section>
 
-        <div id="experience">
+        <section id="experience">
             <h2>Experience</h2>
             <table>
                 <tr>
@@ -67,25 +86,29 @@
                     <td>1 year</td>
                 </tr>
             </table>
-        </div>
+        </section>
     </div>
-    <div id="contact-me">
+    <section id="contact-me">
         <form name="contact" id="contact" data-netlify="true">
             <h1>Contact me</h1>
-            <div>
+            <section>
                 <label for="firstName">First Name</label>
                 <input type="text" name="firstName" id="firstName" required/>
-            </div>
-            <div>
+            </section>
+            <section>
                 <label for="lastName">Last Name</label>
                 <input type="text" name="lastName" id="lastName" required/>
-            </div>
-            <div>
+            </section>
+            <section>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-            </div>
+            </section>
             <button type="submit">Send</button>
         </form>
-    </div>
+    </section>
+    </main>
+    <footer>
+        Made with 🖤 by divya ©️2024
+    </footer>
 </body>
 </html>
