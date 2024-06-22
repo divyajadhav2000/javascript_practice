@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <section class="menu">
+        <button id="close-menu">&times;</button>
         <nav>
+            <ul>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <nav class="default-nav">
             <a href="#about_me">About me</a>
             <a href="#qualification">Qualification</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#experience">Experience</a>
             <a href="#contact-me">Contact me</a>
+        </nav>
+        <nav class="mobile-nav">
+            <button id="menu-button">Menu</button>
         </nav>
     </header>
 
@@ -110,5 +125,6 @@
     <footer>
         Made with 🖤 by divya ©️2024
     </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

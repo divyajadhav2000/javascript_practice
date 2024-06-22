@@ -20,13 +20,24 @@ header {
 
 }
 
-header nav > a {
-    margin: 40px;
+nav a {
     text-decoration: none;
+}
+
+header nav > a {
+    margin-right: 16px;
+}
+
+header nav > a:last-child {
+    margin-right: revert;   
 }
 
 header nav > a:hover {
     text-decoration: underline;
+}
+
+header nav > a:visited {
+    color: royalblue;
 }
 
 footer{
@@ -78,8 +89,8 @@ th {
 }
 
 table {
-    height: 200px;
-    width: 800px;  
+    height: 100px;
+    width: 400px;  
   }
 
 
@@ -121,4 +132,55 @@ form#contact{
 
 #contact-me {
     margin-top: 16px;
+}
+
+.mobile-nav,
+section.menu {
+    display: none;
+}
+
+@media (width <500px) {
+    .default-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: revert;
+    }
+    #menu-button{
+        display: block;
+        background: transparent;
+        border-radius: 8px;
+        margin-left: auto;
+    }
+    section.menu {
+        display: revert;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background: hsl(0, 0%, 100%);
+    }
+    section.menu ul {
+        list-style: none;
+    }
+    section.menu ul > li {
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+    }
+    #close-menu {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background: transparent;
+        font-size: x-large;
+        border: none;
+    }
+}
+
+@media (width<=450px) {
+    #profile-image {
+        width: 100%;
+    }
 }
