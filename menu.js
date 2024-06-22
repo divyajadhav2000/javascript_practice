@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     
     function addClickMenuItems(){
-        const menuItems = document.querySelectorAll("section.menu nav ul li*");
+        const menuItems = document.querySelectorAll("section.menu nav ul li");
         for (let menuItem of menuItems) {
             menuItem.addEventListener("click", closeMenu);
         }

@@ -90,7 +90,7 @@ th {
 
 table {
     height: 100px;
-    width: 400px;  
+    width: 350px;  
   }
 
 
@@ -112,7 +112,7 @@ img{
 
 
 form#contact{
-    max-width: 400px;
+    max-width: 350px;
     margin: auto;
     padding: 16px;
     border: 1px solid;
@@ -176,6 +176,9 @@ section.menu {
         background: transparent;
         font-size: x-large;
         border: none;
+    }
+    form#contact{
+        margin: 1px;
     }
 }
 
