@@ -188,3 +188,21 @@ section.menu {
         width: 100%;
     }
 }
+
+
+:root {
+    --background-color: beige;
+    --text-color: hsl(0, 0%, 0%)
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        --background-color: black;
+        --text-color: hsl(0, 0%, 100%)
+    }
+}
