@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html {
+:root {
     scroll-behavior: smooth;
 }
 
@@ -15,13 +15,14 @@ header {
     padding: 16px;
     position: sticky;
     top: 0;
-    background-color: hsl(0, 0%, 100%);
-    border-bottom: 1px solid black;
-
+    background: var(--background-color);
+    z-index: 1;
 }
 
 nav a {
     text-decoration: none;
+    color: inherit;
+    font-size: var(--font-size-regular);
 }
 
 header nav > a {
@@ -32,12 +33,13 @@ header nav > a:last-child {
     margin-right: revert;   
 }
 
-header nav > a:hover {
-    text-decoration: underline;
+header nav > a:hover,
+nav a:visited:hover {
+    color: var(--secondary-color);
 }
 
 header nav > a:visited {
-    color: royalblue;
+    color: inherit;
 }
 
 footer{
@@ -57,7 +59,7 @@ footer{
 .intro{
     margin: -16px;
     padding: 16px;
-    background-color: #261d1d;
+    background-color: var(--intro-color);
     color: white;
     text-align: center;
 }
@@ -66,7 +68,8 @@ footer{
     height: 300px;
     width: 300px;
     border-radius: 16px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    filter: drop-shadow(4px -6px 10px black);
 }
 
 .social_links img{
@@ -94,7 +97,6 @@ table {
   }
 
 
-p { font-size: 1.2rem;}
 
 .dynamic-text-color {
     color: royalblue;
@@ -122,6 +124,7 @@ form#contact{
 #contact label{
     display: block;
     font-weight: 600;
+    font-size: var(--font-size-regular);
 }
 
 #contact input, #contact textarea, #contact button{
@@ -148,9 +151,11 @@ section.menu {
     }
     #menu-button{
         display: block;
-        background: transparent;
         border-radius: 8px;
         margin-left: auto;
+        background: var(--background-color);
+        color: var(--text-color);
+        border-color: var(--text-color);
     }
     section.menu {
         display: revert;
@@ -159,8 +164,8 @@ section.menu {
         overflow: hidden;
         position: fixed;
         top: 0;
-        z-index: 1;
-        background: hsl(0, 0%, 100%);
+        z-index: 2;
+        background: var(--background-color);
         transition: height 0.8s ease-in-out;
     }
     section.menu ul {
@@ -170,13 +175,20 @@ section.menu {
         margin-bottom: 16px;
         font-size: 1.5rem;
     }
+    section.menu nav {
+        margin-top: 48px;
+    }
+    section.menu nav a {
+        font-size: var(--font-size-large);
+    }
     #close-menu {
         position: absolute;
         right: 16px;
         top: 16px;
         background: transparent;
-        font-size: x-large;
+        font-size: var(--font-size-xl);
         border: none;
+        color: var(--text-color);
     }
     form#contact{
         margin: 1px;
@@ -191,18 +203,27 @@ section.menu {
 
 
 :root {
-    --background-color: beige;
-    --text-color: hsl(0, 0%, 0%)
+    --background-color: hsl(240deg, 80%, 100%);
+    --secondary-color: hsl(225, 85%, 57%);
+    --text-color: hsl(0, 0%, 0%);
+    --intro-color: hsl(0, 0%, 85%);
+
+    --font-size-small: 0.5rem;
+    --font-size-regular: 1rem;
+    --font-size-large: 1.5rem;
+    --font-size-xl: 2rem;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-size: var(--font-size-large);
 }
 
 @media (prefers-color-scheme: dark) {
     body{
         --background-color: black;
-        --text-color: hsl(0, 0%, 100%)
+        --text-color: hsl(240deg, 95%, 100%);
+        --intro-color: hsl(0, 0%, 18%);
     }
 }
