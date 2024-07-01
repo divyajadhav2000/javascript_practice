@@ -9,6 +9,9 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--font-size-large);
 }
 
 header {
@@ -53,6 +56,10 @@ footer{
 }
 
 .container > section h2 {
+    text-align: center;
+}
+
+.container h2 {
     text-align: center;
 }
 
@@ -137,6 +144,30 @@ form#contact{
     margin-top: 16px;
 }
 
+#technologies .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* place-items: center; */
+    gap: var(--spacing-regular);
+    justify-content: center;
+    justify-items: center;
+}
+
+.card {
+    border: 1px solid white;
+    padding: var(--spacing-regular);
+    box-shadow: 3px 3px 8px 5px var(--secondary-color);
+    width: 100%;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card header {
+    text-align: center;
+}
+
 .mobile-nav,
 section.menu {
     display: none;
@@ -212,12 +243,8 @@ section.menu {
     --font-size-regular: 1rem;
     --font-size-large: 1.5rem;
     --font-size-xl: 2rem;
-}
 
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-size: var(--font-size-large);
+    --spacing-regular: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
