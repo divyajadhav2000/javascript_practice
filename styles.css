@@ -75,7 +75,6 @@ footer{
     height: 300px;
     width: 300px;
     border-radius: 16px;
-    /* border-radius: 50%; */
     filter: drop-shadow(4px -6px 10px black);
 }
 
